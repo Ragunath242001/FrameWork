@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes">
+
+    <listeners>
+        <listener class-name="utility.Listeners"/>
+    </listeners>
+
+    <test  name="Login Test">
+        <classes >
+            <class name="TestScript.LoginPageTest" >
+                <methods>
+                    <include name="validateLoginPage_Labels"/>
+                    <exclude name="validateLoginPage_login"/>
+                </methods>
+            </class>
+            <class name="TestScript.ProductPageTest"></class>
+        </classes>
+    </test>
+</suite>
