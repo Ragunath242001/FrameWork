@@ -6,13 +6,12 @@ import org.testng.annotations.*;
 
 
 import utility.CommonFunctions;
-import utility.ExtentManager;
 
 public class LoginPageTest  extends DriverSetUp {
 
     @BeforeMethod
     public void setUp() {
-        ExtentManager.setExtent();
+
         BrowsersetUp();
        
 		
@@ -20,7 +19,7 @@ public class LoginPageTest  extends DriverSetUp {
 
     @AfterMethod
     public void tearDown() {
-        ExtentManager.endReport();
+
     	
         browserQuit();
     }
@@ -30,7 +29,7 @@ public class LoginPageTest  extends DriverSetUp {
 
         LoginPageObject obj = new LoginPageObject();
         obj.getLoginPageTitle(getDriver(),"Swag Labs");
-        obj.validateLoginPageHeading("Swag Labs");
+        obj.validateLoginPageHeading("wag Labs");
         obj.validatePlaceholdervalue("Username","Password");
 
        
@@ -56,17 +55,6 @@ public class LoginPageTest  extends DriverSetUp {
 
     }
 
-    @Test(priority = 3)
-    public void validateLoginPage_Labelstemp(){
-
-        LoginPageObject obj = new LoginPageObject();
-        obj.getLoginPageTitle(getDriver(),"Swag Labs");
-        obj.validateLoginPageHeading("Swag Labs");
-        obj.validatePlaceholdervalue("Username","Password");
-
-
-
-    }
 
 
 

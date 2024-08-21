@@ -12,14 +12,16 @@ public class ProductPageTest extends DriverSetUp {
 
     @BeforeMethod
     public void setUp() {
+
         ExtentManager.setExtent();
+
         BrowsersetUp();
     }
 
     @AfterMethod
     public void tearDown() {
+
         ExtentManager.endReport();
-    	
         browserQuit();
     }
 
