@@ -30,15 +30,6 @@ public class Listeners  implements  ITestListener  {
 
     public  void onTestFailure(ITestResult result) {
 
-       try {
-            CommonFunctions.takeScreenShot();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-       }
-
-        System.out.println("Test Failure");
-
-
     }
 
     public void onTestSkipped(ITestResult result) {
