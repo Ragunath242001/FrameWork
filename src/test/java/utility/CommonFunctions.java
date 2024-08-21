@@ -31,20 +31,38 @@ public class CommonFunctions  {
     public static String getDate(){
 
         Date date = new Date();
-        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
+        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy_hh-mm-ss");
         String dateString = formatter.format(date);
+        System.out.println(dateString);
         return dateString;
 
+        
     }
 
-    public static void takeScreenShot(WebDriver driver) throws IOException {
+    public static String takeScreenShot(WebDriver driver)   {
+    	
+    	String screenShotPath  = System.getProperty("user.dir")+"\\ScreenShot\\"+getDate()+".png";
+    	System.out.println(screenShotPath);
+    	
+    	
+    	
 
-        File decloc = new File("./src/test/java/Resource/ScreenShot/"+getDate()+".png");
+        File decloc = new File(screenShotPath);
+        System.out.println(decloc);
         TakesScreenshot ts = (TakesScreenshot)driver;
        File srcfileloc =  ts.getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(srcfileloc, decloc);
+        try {
+			FileUtils.copyFile(srcfileloc, decloc);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
+        return screenShotPath;
 
     }
+    
+
 
 
 }

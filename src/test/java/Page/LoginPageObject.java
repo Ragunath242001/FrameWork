@@ -5,19 +5,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+
+import BaseTest.DriverSetUp;
 import utility.CommonFunctions;
 
-public class LoginPageObject  {
+public class LoginPageObject extends DriverSetUp {
 
-    WebDriver driver;
-    public LoginPageObject(WebDriver driver) {
+   
+    public LoginPageObject() {
 
-        //intilize the drive to ele
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+    	PageFactory.initElements(getDriver(), this);
 
         //validate the Page title Constructor level
-        Assert.assertEquals(driver.getTitle(),"Swag Labs");
+        Assert.assertEquals(getDriver().getTitle(),"Swag Labs");
 
     }
 
@@ -44,7 +44,7 @@ public class LoginPageObject  {
     //Action
 
     //Validate Login page Title
-    public void getLoginPageTitle(String PageTitle ){
+    public void getLoginPageTitle(WebDriver driver,String PageTitle ){
         Assert.assertEquals(driver.getTitle(),PageTitle);
 
     }
@@ -76,7 +76,7 @@ public class LoginPageObject  {
     //click on Login Button
     public void ClickOnLoginButton(){
         loginButtonele.click();
-        System.out.println(driver.getCurrentUrl());
+        System.out.println(getDriver().getCurrentUrl());
 
     }
 
@@ -108,7 +108,7 @@ public class LoginPageObject  {
 
     public ProductPageObject correctUserNameAndPassword(){
 
-        return new ProductPageObject(driver);
+        return new ProductPageObject();
 
     }
 

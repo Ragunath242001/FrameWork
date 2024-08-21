@@ -4,15 +4,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class ProductPageObject{
+import BaseTest.DriverSetUp;
 
-    public WebDriver driver;
+public class ProductPageObject extends DriverSetUp{
 
-    public ProductPageObject(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+   
+    public ProductPageObject() {
+       
+    	PageFactory.initElements(getDriver(), this);
 
-        Assert.assertEquals(driver.getCurrentUrl(),"https://www.saucedemo.com/inventory.html");
+        Assert.assertEquals(getDriver().getCurrentUrl(),"https://www.saucedemo.com/inventory.html");
     }
 
     //locators
@@ -22,7 +23,7 @@ public class ProductPageObject{
     //Actions
 
     public void validateProductPageCurrentURL(String expectedURL){
-        Assert.assertEquals(driver.getCurrentUrl(),expectedURL);
+        Assert.assertEquals(getDriver().getCurrentUrl(),expectedURL);
     }
 
 }

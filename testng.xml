@@ -9,12 +9,8 @@
     <test  name="Login Test">
         <classes >
             <class name="TestScript.LoginPageTest" >
-                <methods>
-                    <include name="validateLoginPage_Labels"/>
-                    <exclude name="validateLoginPage_login"/>
-                </methods>
             </class>
-            <class name="TestScript.ProductPageTest"></class>
+             <class name="TestScript.ProductPageTest"></class>
         </classes>
     </test>
 </suite>

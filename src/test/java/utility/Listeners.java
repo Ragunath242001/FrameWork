@@ -5,34 +5,51 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+
+
 import utility.*;
 import BaseTest.DriverSetUp.*;
 
 import java.io.IOException;
 import java.sql.Driver;
 
-public class Listeners  implements  ITestListener  {
+public class Listeners implements  ITestListener  {
 
 
     public   void onTestStart(ITestResult result) {
-        System.out.println("Test Start");
+       
+      
 
-        
+       // test = extent.createTest(result.getName());
     }
 
   
     public void onTestSuccess(ITestResult result) {
-        System.out.println("Test Success");
-       // System.out.println(driver.getCurrentUrl());
-        
+    	
+    	System.out.println("Pass");
     }
+    	
+//  
 
 
     public  void onTestFailure(ITestResult result) {
+    	
+    	System.out.println("Test Failed");
+    	
+    	CommonFunctions.takeScreenShot(BaseTest.DriverSetUp.getDriver());
+    
 
     }
 
     public void onTestSkipped(ITestResult result) {
+
+		
+    	
 
     }
 
