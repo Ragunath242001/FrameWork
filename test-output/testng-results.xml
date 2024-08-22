@@ -2,16 +2,28 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-22T04:33:49 IST" name="All Test Suite" finished-at="2024-08-22T04:34:02 IST" duration-ms="13684">
+  <suite started-at="2024-08-22T06:20:31 IST" name="All Test Suite" finished-at="2024-08-22T06:20:41 IST" duration-ms="10831">
     <groups>
     </groups>
-    <test started-at="2024-08-22T04:33:49 IST" name="Login Test" finished-at="2024-08-22T04:34:02 IST" duration-ms="13684">
+    <test started-at="2024-08-22T06:20:31 IST" name="Login Test" finished-at="2024-08-22T06:20:41 IST" duration-ms="10831">
       <class name="TestScript.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@795509d9]" started-at="2024-08-22T04:33:49 IST" name="setUp" finished-at="2024-08-22T04:33:54 IST" duration-ms="5224" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:31 IST" name="setUp" finished-at="2024-08-22T06:20:37 IST" duration-ms="6093" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateLoginPage_Labels()[pri:0, instance:TestScript.LoginPageTest@795509d9]" started-at="2024-08-22T04:33:54 IST" name="validateLoginPage_Labels" finished-at="2024-08-22T04:33:54 IST" duration-ms="117" status="FAIL">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:31 IST" name="setUp" finished-at="2024-08-22T06:20:37 IST" duration-ms="6551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:32 IST" name="setUp" finished-at="2024-08-22T06:20:37 IST" duration-ms="5764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateLoginWithOutAnyValue()[pri:2, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:37 IST" name="validateLoginWithOutAnyValue" finished-at="2024-08-22T06:20:38 IST" duration-ms="1077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginWithOutAnyValue -->
+        <test-method signature="validateLoginPage_Labels()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:37 IST" name="validateLoginPage_Labels" finished-at="2024-08-22T06:20:38 IST" duration-ms="643" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [wag Labs] but found [Swag Labs]]]>
@@ -24,8 +36,8 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at Page.LoginPageObject.getLoginPageTitle(LoginPageObject.java:48)
-at TestScript.LoginPageTest.validateLoginPage_Labels(LoginPageTest.java:30)
+at Page.LoginPageObject.validateLoginPageHeading(LoginPageObject.java:55)
+at TestScript.LoginPageTest.validateLoginPage_Labels(LoginPageTest.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,15 +62,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginPage_Labels -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@795509d9]" started-at="2024-08-22T04:33:54 IST" name="tearDown" finished-at="2024-08-22T04:33:55 IST" duration-ms="495" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@795509d9]" started-at="2024-08-22T04:33:55 IST" name="setUp" finished-at="2024-08-22T04:33:57 IST" duration-ms="1986" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateLoginPage_login(java.lang.String,java.lang.String)[pri:1, instance:TestScript.LoginPageTest@795509d9]" started-at="2024-08-22T04:33:57 IST" name="validateLoginPage_login" data-provider="testData" finished-at="2024-08-22T04:33:58 IST" duration-ms="366" status="PASS">
+        <test-method signature="validateLoginPage_login(java.lang.String,java.lang.String)[pri:1, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:37 IST" name="validateLoginPage_login" data-provider="testData" finished-at="2024-08-22T06:20:39 IST" duration-ms="1345" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,15 +78,23 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginPage_login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@795509d9]" started-at="2024-08-22T04:33:58 IST" name="tearDown" finished-at="2024-08-22T04:33:58 IST" duration-ms="236" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:38 IST" name="tearDown" finished-at="2024-08-22T06:20:39 IST" duration-ms="1414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@795509d9]" started-at="2024-08-22T04:33:58 IST" name="setUp" finished-at="2024-08-22T04:34:00 IST" duration-ms="1716" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:39 IST" name="tearDown" finished-at="2024-08-22T06:20:39 IST" duration-ms="536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:39 IST" name="tearDown" finished-at="2024-08-22T06:20:39 IST" duration-ms="512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:39 IST" name="setUp" finished-at="2024-08-22T06:20:41 IST" duration-ms="1570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateLoginPage_login(java.lang.String,java.lang.String)[pri:1, instance:TestScript.LoginPageTest@795509d9]" started-at="2024-08-22T04:34:00 IST" name="validateLoginPage_login" data-provider="testData" finished-at="2024-08-22T04:34:00 IST" duration-ms="418" status="PASS">
+        <test-method signature="validateLoginPage_login(java.lang.String,java.lang.String)[pri:1, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:41 IST" name="validateLoginPage_login" data-provider="testData" finished-at="2024-08-22T06:20:41 IST" duration-ms="357" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,33 +110,21 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginPage_login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@795509d9]" started-at="2024-08-22T04:34:00 IST" name="tearDown" finished-at="2024-08-22T04:34:00 IST" duration-ms="208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@795509d9]" started-at="2024-08-22T04:34:00 IST" name="setUp" finished-at="2024-08-22T04:34:02 IST" duration-ms="1798" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateLoginWithOutAnyValue()[pri:2, instance:TestScript.LoginPageTest@795509d9]" started-at="2024-08-22T04:34:02 IST" name="validateLoginWithOutAnyValue" finished-at="2024-08-22T04:34:02 IST" duration-ms="173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginWithOutAnyValue -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@795509d9]" started-at="2024-08-22T04:34:02 IST" name="tearDown" finished-at="2024-08-22T04:34:02 IST" duration-ms="229" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:41 IST" name="tearDown" finished-at="2024-08-22T06:20:41 IST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestScript.LoginPageTest -->
       <class name="TestScript.ProductPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@268f106e]" started-at="2024-08-22T04:33:49 IST" name="setUp" finished-at="2024-08-22T04:33:54 IST" duration-ms="5232" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@7e057f43]" started-at="2024-08-22T06:20:31 IST" name="setUp" finished-at="2024-08-22T06:20:37 IST" duration-ms="6616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateLoginPage_Labels()[pri:0, instance:TestScript.ProductPageTest@268f106e]" started-at="2024-08-22T04:33:54 IST" name="validateLoginPage_Labels" finished-at="2024-08-22T04:33:54 IST" duration-ms="395" status="PASS">
+        <test-method signature="ProductPageValidation()[pri:0, instance:TestScript.ProductPageTest@7e057f43]" started-at="2024-08-22T06:20:37 IST" name="ProductPageValidation" finished-at="2024-08-22T06:20:38 IST" duration-ms="756" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLoginPage_Labels -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@268f106e]" started-at="2024-08-22T04:33:54 IST" name="tearDown" finished-at="2024-08-22T04:33:55 IST" duration-ms="427" status="PASS">
+        </test-method> <!-- ProductPageValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@7e057f43]" started-at="2024-08-22T06:20:38 IST" name="tearDown" finished-at="2024-08-22T06:20:39 IST" duration-ms="1238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

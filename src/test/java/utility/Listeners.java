@@ -6,6 +6,10 @@ import com.aventstack.extentreports.MediaEntityModelProvider;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
+
+
+import BaseTest.DriverSetUp;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
@@ -18,7 +22,11 @@ import java.sql.SQLOutput;
 
 public class Listeners extends ExtentManager implements ITestListener {
     public void onTestStart(ITestResult result) {
-        test = extent.createTest(result.getName());
+    	
+    	
+    	
+    	
+        test = extent.createTest( result.getTestClass().getName()+" - "+ result.getMethod().getMethodName());
     }
 
     public void onTestSuccess(ITestResult result) {
@@ -33,10 +41,23 @@ public class Listeners extends ExtentManager implements ITestListener {
         test.log(Status.FAIL,
                 MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
 
-        //test.fail("Filed", MediaEntityBuilder.createScreenCaptureFromPath())
+    
+    	String imgPath = CommonFunctions.takeScreenShot(DriverSetUp.getDriver(), result.getName());
+		
+		try {
+			test.fail("ScreenShot is Attached", MediaEntityBuilder.createScreenCaptureFromPath(imgPath).build());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 
     }
     public void onTestSkipped(ITestResult result) {
+    	
+    	if (result.getStatus() == ITestResult.SKIP) {
+			test.log(Status.SKIP, "Skipped Test case is: " + result.getName());
+		}
 
 
     }
@@ -46,10 +67,17 @@ public class Listeners extends ExtentManager implements ITestListener {
 
     }
     public void onStart(ITestResult context) {
+    	
+    
+    	
+    	
 
 
     }
     public void onFinish(ITestContext context) {
+    	
+    	
+    	 
 
 
     }

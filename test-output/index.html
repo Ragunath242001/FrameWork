@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
-                    <span>E:\CodeBase\FrameWork\testng.xml</span>
+                    <span>D:\CodeBase\FrameWork\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -117,7 +117,7 @@
                     <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="TestScript.ProductPageTest" class="method navigator-link" hash-for-method="validateLoginPage_Labels">validateLoginPage_Labels</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="TestScript.ProductPageTest" class="method navigator-link" hash-for-method="ProductPageValidation">ProductPageValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,8 +159,8 @@
                   </a> <!-- validateLoginPage_Labels -->
                   <span class="method-name">validateLoginPage_Labels</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [wag Labs] but found [Swag Labs]
-	at Page.LoginPageObject.getLoginPageTitle(LoginPageObject.java:48)
-	at TestScript.LoginPageTest.validateLoginPage_Labels(LoginPageTest.java:30)
+	at Page.LoginPageObject.validateLoginPageHeading(LoginPageObject.java:55)
+	at TestScript.LoginPageTest.validateLoginPage_Labels(LoginPageTest.java:33)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
@@ -172,6 +172,21 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.ProductPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProductPageValidation">
+                  </a> <!-- ProductPageValidation -->
+                  <span class="method-name">ProductPageValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -203,35 +218,20 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestScript.ProductPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateLoginPage_Labels">
-                  </a> <!-- validateLoginPage_Labels -->
-                  <span class="method-name">validateLoginPage_Labels</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
         </div> <!-- panel All_Test_Suite -->
         <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\CodeBase\FrameWork\testng.xml</span>
+            <span class="header-content">D:\CodeBase\FrameWork\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;classes&quot; name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utility.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Login Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Login Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestScript.LoginPageTest&quot;/&gt;
       &lt;class name=&quot;TestScript.ProductPageTest&quot;/&gt;
@@ -278,28 +278,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validateLoginPage_login')
 data.setCell(0, 2, 'TestScript.LoginPageTest')
-data.setCell(0, 3, 418);
+data.setCell(0, 3, 1345);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateLoginPage_Labels')
-data.setCell(1, 2, 'TestScript.ProductPageTest')
-data.setCell(1, 3, 395);
+data.setCell(1, 1, 'validateLoginWithOutAnyValue')
+data.setCell(1, 2, 'TestScript.LoginPageTest')
+data.setCell(1, 3, 1077);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateLoginPage_login')
-data.setCell(2, 2, 'TestScript.LoginPageTest')
-data.setCell(2, 3, 366);
+data.setCell(2, 1, 'ProductPageValidation')
+data.setCell(2, 2, 'TestScript.ProductPageTest')
+data.setCell(2, 3, 756);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateLoginWithOutAnyValue')
+data.setCell(3, 1, 'validateLoginPage_Labels')
 data.setCell(3, 2, 'TestScript.LoginPageTest')
-data.setCell(3, 3, 173);
+data.setCell(3, 3, 643);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validateLoginPage_Labels')
+data.setCell(4, 1, 'validateLoginPage_login')
 data.setCell(4, 2, 'TestScript.LoginPageTest')
-data.setCell(4, 3, 117);
+data.setCell(4, 3, 357);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -335,73 +335,73 @@ return data;
               <div class="chronological-class-name">TestScript.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">987 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLoginWithOutAnyValue</span>
+                <span class="method-start">6099 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validateLoginPage_Labels</span>
-                <span class="method-start">5227 ms</span>
+                <span class="method-start">6551 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.ProductPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">validateLoginPage_Labels</span>
-                <span class="method-start">5233 ms</span>
+                <span class="method-name">ProductPageValidation</span>
+                <span class="method-start">6616 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateLoginPage_login(standard_user, secret_sauce)</span>
+                <span class="method-start">6751 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5564 ms</span>
+                <span class="method-start">7219 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.ProductPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5629 ms</span>
+                <span class="method-start">7375 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">6462 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateLoginPage_login(standard_user, secret_sauce)</span>
-                <span class="method-start">8448 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8817 ms</span>
+                <span class="method-start">8094 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8099 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">9055 ms</span>
+                <span class="method-start">8612 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateLoginPage_login(standard_user, secret_sauce)</span>
-                <span class="method-start">10771 ms</span>
+                <span class="method-start">10183 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11195 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">11404 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateLoginWithOutAnyValue</span>
-                <span class="method-start">13202 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">13376 ms</span>
+                <span class="method-start">10543 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -39,9 +39,9 @@ public class CommonFunctions  {
         
     }
 
-    public static String takeScreenShot(WebDriver driver)   {
+    public static String takeScreenShot(WebDriver driver , String FileName)   {
     	
-    	String screenShotPath  = System.getProperty("user.dir")+"\\ScreenShot\\"+getDate()+".png";
+    	String screenShotPath  = System.getProperty("user.dir")+"\\ScreenShot\\"+getDate()+"_"+FileName+".png";
     	System.out.println(screenShotPath);
     	
     	

@@ -26,7 +26,7 @@ public class ProductPageTest extends DriverSetUp {
     }
 
     @Test(priority = 0)
-    public void validateLoginPage_Labels(){
+    public void ProductPageValidation(){
 
         LoginPageObject obj = new LoginPageObject();
         obj.getLoginPageTitle(getDriver(), "Swag Labs");
