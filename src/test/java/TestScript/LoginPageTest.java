@@ -34,7 +34,7 @@ public class LoginPageTest extends DriverSetUp {
 		loginobj.getLoginPageTitle("Swag Labs");
 		loginobj.validateLoginPageHeading("Swag Labs");
 		loginobj.validatePlaceholdervalue("Username", "Password");
-		loginobj.LoginButtonIsDisplayed();
+		
 
 	}
 

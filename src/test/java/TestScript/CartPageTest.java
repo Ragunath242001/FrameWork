@@ -34,7 +34,7 @@ public class CartPageTest extends DriverSetUp {
 	CartPageObject clickOnCartIco;
 
 	@Test(priority = 0)
-	public void validateLoginPage_Labels() throws InterruptedException {
+	public void validateProductAddedToCart() throws InterruptedException {
 
 		loginobj = new LoginPageObject();
     	loginobj.Login("standard_user", "secret_sauce");
