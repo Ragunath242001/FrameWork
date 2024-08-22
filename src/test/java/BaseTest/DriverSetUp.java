@@ -26,25 +26,30 @@ public class DriverSetUp {
 
 	public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
 	
+	
+	//To trigger Report  
 	@BeforeSuite
 	public void  loadConfig() {
-		ExtentManager.setExtent();
-		
+		ExtentManager.setExtent();	
 	}
 	
+	
+	//Push all result to Report
 	@AfterSuite
 	public void terminateconfig() {
 		ExtentManager.endReport();
 		
 	}
 
+	
+	//Driver setup 
 	public void BrowsersetUp() {
 
-		//RemoteWebDriver remoteWebDriver = driver.get();
-
+		//To fetch driver type 
 		String originaldriverType = readPropertieFile.configProperties("driver");
 		String driverType = originaldriverType.toLowerCase();
 
+		//Based on user value , it will assign browser instance 
 		switch (driverType) {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
@@ -71,20 +76,24 @@ public class DriverSetUp {
 
 		// Launching the URL
 		getDriver().get(readPropertieFile.configProperties("url"));
+		
+		//Wait for all webelement and elements
 		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
+		//To wait for page load
 		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
 
 	}
 
+	
+	//TO Close all Browser instance
 	public void browserQuit() {
-
 		getDriver().quit();
 
 	}
 
+	// Get Driver from threadLocalmap
 	public static WebDriver getDriver() {
-		// Get Driver from threadLocalmap
-
 		return driver.get();
 	}
 

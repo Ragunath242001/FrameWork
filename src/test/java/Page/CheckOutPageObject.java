@@ -14,8 +14,7 @@ public class CheckOutPageObject extends DriverSetUp {
     	actionobj = new Action();
     	PageFactory.initElements(getDriver(), this);
 
-        //validate the Page title Constructor level
-    	
+        //validate the Page url Constructor level
     	Assert.assertEquals(getDriver().getCurrentUrl(), "https://www.saucedemo.com/checkout-step-one.html");
     	
 
