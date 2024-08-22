@@ -25,10 +25,22 @@ public class DriverSetUp {
 	// public WebDriver driver ;
 
 	public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
+	
+	@BeforeSuite
+	public void  loadConfig() {
+		ExtentManager.setExtent();
+		
+	}
+	
+	@AfterSuite
+	public void terminateconfig() {
+		ExtentManager.endReport();
+		
+	}
 
 	public void BrowsersetUp() {
 
-		RemoteWebDriver remoteWebDriver = driver.get();
+		//RemoteWebDriver remoteWebDriver = driver.get();
 
 		String originaldriverType = readPropertieFile.configProperties("driver");
 		String driverType = originaldriverType.toLowerCase();

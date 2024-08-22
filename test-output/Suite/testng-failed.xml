@@ -1,34 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="utility.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="methods" name="TestEx(failed)">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="TestScript.ProductPageTest">
-        <methods>
-          <include name="validateISProductDisplayed"/>
-          <include name="setUp"/>
-          <include name="validateAddToCart"/>
-          <include name="tearDown"/>
-          <include name="validatePrizeSection"/>
-        </methods>
-      </class> <!-- TestScript.ProductPageTest -->
-      <class name="TestScript.LoginPageTest">
-        <methods>
-          <include name="validateLoginWithOutAnyValue"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- TestScript.LoginPageTest -->
       <class name="TestScript.CartPageTest">
         <methods>
           <include name="tearDown"/>
           <include name="ValidateCheckoutFunctionality"/>
+          <include name="loadConfig"/>
           <include name="setUp"/>
+          <include name="terminateconfig"/>
+          <include name="validateProductAddedToCart"/>
         </methods>
       </class> <!-- TestScript.CartPageTest -->
     </classes>
-  </test> <!-- TestEx(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

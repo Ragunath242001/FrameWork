@@ -16,7 +16,7 @@ public class CartPageTest extends DriverSetUp {
 	@BeforeMethod
 	public void setUp() {
 
-		ExtentManager.setExtent();
+		//ExtentManager.setExtent();
 		BrowsersetUp();
 
 	}
@@ -24,25 +24,23 @@ public class CartPageTest extends DriverSetUp {
 	@AfterMethod
 	public void tearDown() {
 		
-		ExtentManager.endReport();
+		//ExtentManager.endReport();
 
 		browserQuit();
 	}
 	
-	LoginPageObject loginobj ;
-	ProductPageObject productobj;
-	CartPageObject clickOnCartIco;
+	
 
 	@Test(priority = 0)
 	public void validateProductAddedToCart() throws InterruptedException {
 
-		loginobj = new LoginPageObject();
+		LoginPageObject loginobj = new LoginPageObject();
     	loginobj.Login("standard_user", "secret_sauce");
     	loginobj.ClickOnLoginButton();
-     	productobj = new ProductPageObject();
+     	ProductPageObject productobj = new ProductPageObject();
      	productobj.selectPrizeValue("Price (low to high)");
      	productobj.clickOnAddToCart();
-     	clickOnCartIco = productobj.clickOnCartIcon();
+     	CartPageObject clickOnCartIco = productobj.clickOnCartIcon();
      	clickOnCartIco.validateProdctAddedToCartInCartPage();
      	
 	}
@@ -50,13 +48,13 @@ public class CartPageTest extends DriverSetUp {
 	@Test(priority = 1 , description = "validate check out after added product to the cart")
 	public void ValidateCheckoutFunctionality() {
 		
-		loginobj = new LoginPageObject();
+		LoginPageObject loginobj = new LoginPageObject();
     	loginobj.Login("standard_user", "secret_sauce");
     	loginobj.ClickOnLoginButton();
-     	productobj = new ProductPageObject();
+    	ProductPageObject productobj = new ProductPageObject();
      	productobj.selectPrizeValue("Price (low to high)");
      	productobj.clickOnAddToCart();
-     	clickOnCartIco = productobj.clickOnCartIcon();
+     	CartPageObject clickOnCartIco = productobj.clickOnCartIcon();
      	clickOnCartIco.clickOnCheckOut();
      	
 		
@@ -66,13 +64,13 @@ public class CartPageTest extends DriverSetUp {
 	@Test(priority = 2 , description = "validate continue shopping From cart page")
 	public void validateContinueShoppingFunctionality() {
 		
-		loginobj = new LoginPageObject();
+		LoginPageObject loginobj = new LoginPageObject();
     	loginobj.Login("standard_user", "secret_sauce");
     	loginobj.ClickOnLoginButton();
-     	productobj = new ProductPageObject();
+    	ProductPageObject productobj = new ProductPageObject();
      	productobj.selectPrizeValue("Price (low to high)");
      	productobj.clickOnAddToCart();
-     	clickOnCartIco = productobj.clickOnCartIcon();
+     	CartPageObject clickOnCartIco = productobj.clickOnCartIcon();
      	clickOnCartIco.ClickOnContinueShopping();
 		
 	}

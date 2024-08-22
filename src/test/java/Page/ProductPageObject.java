@@ -83,7 +83,7 @@ public class ProductPageObject extends DriverSetUp{
     }
     
     
-    public void  clickOnAddToCart() {
+    public void   clickOnAddToCart() {
     	
     	addToCart.get(0).click();
     	int text = Integer.parseInt( addToCartIconCount.getText());

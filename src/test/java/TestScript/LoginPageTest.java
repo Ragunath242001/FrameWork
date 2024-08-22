@@ -12,7 +12,7 @@ public class LoginPageTest extends DriverSetUp {
 	
 	@BeforeMethod
 	public void setUp() {
-		ExtentManager.setExtent();
+		//ExtentManager.setExtent();
 
 		BrowsersetUp();
 
@@ -20,17 +20,17 @@ public class LoginPageTest extends DriverSetUp {
 
 	@AfterMethod
 	public void tearDown() {
-		ExtentManager.endReport();
+		//ExtentManager.endReport();
 
 		browserQuit();
 	}
 
-	LoginPageObject loginobj;
+	
 
 	@Test(priority = 0)
 	public void validateLoginPage_Labels() {
 
-		loginobj = new LoginPageObject();
+		LoginPageObject	loginobj = new LoginPageObject();
 		loginobj.getLoginPageTitle("Swag Labs");
 		loginobj.validateLoginPageHeading("Swag Labs");
 		loginobj.validatePlaceholdervalue("Username", "Password");
@@ -39,8 +39,13 @@ public class LoginPageTest extends DriverSetUp {
 	}
 
 	@Test(priority = 1)
-	public void validateLoginWithOutAnyValue() {
-		loginobj.LoginButtonIsDisplayed();
+	public void validateLoginButtonIsDisplayed() {
+		
+		LoginPageObject loginobj = new LoginPageObject();
+		loginobj.LoginButtonIsDisplayed(getDriver());
+		
+	
+		
 
 	}
 
@@ -48,7 +53,7 @@ public class LoginPageTest extends DriverSetUp {
 	public void validateLoginPage_login(String username, String password) {
 		System.out.println(username + " " + password);
 
-		loginobj = new LoginPageObject();
+		LoginPageObject loginobj = new LoginPageObject();
 		loginobj.Login(username, password);
 		loginobj.ClickOnLoginButton();
 		loginobj.validateLoginFunction();

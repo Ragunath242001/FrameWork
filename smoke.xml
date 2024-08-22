@@ -10,7 +10,7 @@
 		<classes>
 			<class name="TestScript.LoginPageTest">
 				<methods>
-					<include name="validateLoginPage_login"></include>
+					
 					<include name="validateLoginPage_Labels"></include>
 				</methods>
 
@@ -24,7 +24,8 @@
 
 			<class name="TestScript.CartPageTest">
 				<methods>
-					<include name="validateLoginPage_Labels"></include>
+					<include name="validateProductAddedToCart"></include>
+					<include name="validateContinueShoppingFunctionality"></include>
 				</methods>
 			</class>
 		</classes>

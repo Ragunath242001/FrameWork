@@ -14,7 +14,7 @@ public class ProductPageTest extends DriverSetUp {
 	@BeforeMethod
 	public void setUp() {
 
-		ExtentManager.setExtent();
+		//ExtentManager.setExtent();
 
 		BrowsersetUp();
 	}
@@ -22,51 +22,51 @@ public class ProductPageTest extends DriverSetUp {
 	@AfterMethod
 	public void tearDown() {
 
-		ExtentManager.endReport();
+		//ExtentManager.endReport();
 		browserQuit();
 	}
 
-	LoginPageObject loginobj;
-	ProductPageObject productobj;
+	
+	
 
 	@Test(priority = 0, description = "Validating Currect page url ")
 	public void ProductPageValidation() {
 
-		loginobj = new LoginPageObject();
+		LoginPageObject loginobj = new LoginPageObject();
 		loginobj.Login("standard_user", "secret_sauce");
 		loginobj.ClickOnLoginButton();
 		loginobj.validateLoginFunction();
-		productobj = new ProductPageObject();
+		ProductPageObject productobj = new ProductPageObject();
 		productobj.validateProductPageCurrentURL("https://www.saucedemo.com/inventory.html");
 
 	}
 
 	@Test(priority = 1, description = "validate prize Dropdown")
 	public void validatePrizeSection() {
-		loginobj = new LoginPageObject();
+		LoginPageObject loginobj = new LoginPageObject();
 		loginobj.Login("standard_user", "secret_sauce");
 		loginobj.ClickOnLoginButton();
-		productobj = new ProductPageObject();
+		ProductPageObject productobj = new ProductPageObject();
 		productobj.selectPrizeValue("Price (low to high)");
 
 	}
 
 	@Test(priority = 2, description = "validate product is  Displayed or not")
 	public void validateISProductDisplayed() {
-		loginobj = new LoginPageObject();
+		LoginPageObject loginobj = new LoginPageObject();
 		loginobj.Login("standard_user", "secret_sauce");
 		loginobj.ClickOnLoginButton();
-		productobj = new ProductPageObject();
+		ProductPageObject productobj = new ProductPageObject();
 		productobj.validateProductIsVisible();
 
 	}
 
 	@Test(priority = 3)
 	public void validateAddToCart() {
-		loginobj = new LoginPageObject();
+		LoginPageObject loginobj = new LoginPageObject();
 		loginobj.Login("standard_user", "secret_sauce");
 		loginobj.ClickOnLoginButton();
-		productobj = new ProductPageObject();
+		ProductPageObject productobj = new ProductPageObject();
 		productobj.validateProductIsVisible();
 		productobj.validateAddToCartAndProductCount();
 
@@ -74,10 +74,10 @@ public class ProductPageTest extends DriverSetUp {
 
 	@Test(priority = 4, description = "Add product To Cart")
 	public void addProductToCart() {
-		loginobj = new LoginPageObject();
+		LoginPageObject loginobj = new LoginPageObject();
 		loginobj.Login("standard_user", "secret_sauce");
 		loginobj.ClickOnLoginButton();
-		productobj = new ProductPageObject();
+		ProductPageObject	productobj = new ProductPageObject();
 		productobj.selectPrizeValue("Price (low to high)");
 		productobj.clickOnAddToCart();
 

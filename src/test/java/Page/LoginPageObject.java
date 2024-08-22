@@ -87,11 +87,14 @@ public class LoginPageObject extends DriverSetUp {
     
     //Validate login Button is Displayed
     
-    public void LoginButtonIsDisplayed() {
+    public void LoginButtonIsDisplayed(WebDriver driver) {
+    	
+    	System.out.println(driver.getCurrentUrl());
+    	
     	boolean status = false ;
     	
     	try {
-			WebElement ele = getDriver().findElement(By.id("login-button"));
+			WebElement ele = driver.findElement(By.id("login-button"));
 			if(ele.isDisplayed()) {
 				status=true;
 			}
