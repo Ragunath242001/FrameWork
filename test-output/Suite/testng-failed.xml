@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="utility.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="methods" name="Test(failed)">
+  <test thread-count="5" parallel="methods" name="TestEx(failed)">
     <classes>
       <class name="TestScript.ProductPageTest">
         <methods>
@@ -12,6 +12,7 @@
           <include name="setUp"/>
           <include name="validateAddToCart"/>
           <include name="tearDown"/>
+          <include name="validatePrizeSection"/>
         </methods>
       </class> <!-- TestScript.ProductPageTest -->
       <class name="TestScript.LoginPageTest">
@@ -26,9 +27,8 @@
           <include name="tearDown"/>
           <include name="ValidateCheckoutFunctionality"/>
           <include name="setUp"/>
-          <include name="validateContinueShoppingFunctionality"/>
         </methods>
       </class> <!-- TestScript.CartPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestEx(failed) -->
 </suite> <!-- Failed suite [Suite] -->

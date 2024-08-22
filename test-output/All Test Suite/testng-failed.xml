@@ -8,11 +8,18 @@
     <classes>
       <class name="TestScript.LoginPageTest">
         <methods>
-          <include name="validateLoginPage_Labels"/>
+          <include name="validateLoginPage_login" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- TestScript.LoginPageTest -->
+      <class name="TestScript.ProductPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateAddToCart"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestScript.ProductPageTest -->
     </classes>
   </test> <!-- Login Test(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

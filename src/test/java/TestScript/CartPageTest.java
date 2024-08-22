@@ -8,6 +8,7 @@ import BaseTest.DriverSetUp;
 import Page.CartPageObject;
 import Page.LoginPageObject;
 import Page.ProductPageObject;
+import utility.ExtentManager;
 
 public class CartPageTest extends DriverSetUp {
 	
@@ -15,12 +16,15 @@ public class CartPageTest extends DriverSetUp {
 	@BeforeMethod
 	public void setUp() {
 
+		ExtentManager.setExtent();
 		BrowsersetUp();
 
 	}
 
 	@AfterMethod
 	public void tearDown() {
+		
+		ExtentManager.endReport();
 
 		browserQuit();
 	}

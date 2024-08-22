@@ -6,7 +6,7 @@
 		<listener class-name="utility.Listeners" />
 	</listeners>
 
-	<test name="Login Test" parallel="false">
+	<test name="Login Test" parallel="true">
 		<classes>
 			<class name="TestScript.LoginPageTest">
 				<methods>
