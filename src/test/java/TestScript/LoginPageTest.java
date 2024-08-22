@@ -32,7 +32,7 @@ public class LoginPageTest extends DriverSetUp {
 
 		LoginPageObject	loginobj = new LoginPageObject();
 		loginobj.getLoginPageTitle("Swag Labs");
-		loginobj.validateLoginPageHeading("Swag Labs");
+		loginobj.validateLoginPageHeading("wag Labs");
 		loginobj.validatePlaceholdervalue("Username", "Password");
 		
 

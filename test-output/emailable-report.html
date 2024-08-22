@@ -8,15 +8,29 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">All Test Suite</th></tr>
-<tr><td><a href="#t0">Login Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,697</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">TestEx</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">30,646</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">TestScript.CartPageTest</td><td><a href="#m0">validateContinueShoppingFunctionality</a></td><td rowspan="1">1724328161522</td><td rowspan="1">3193</td></tr><tr class="passedeven"><td><a href="#m1">validateProductAddedToCart</a></td><td rowspan="1">1724328161598</td><td rowspan="1">3603</td></tr><tr class="passedodd"><td rowspan="1">TestScript.LoginPageTest</td><td><a href="#m2">validateLoginPage_Labels</a></td><td rowspan="1">1724328161520</td><td rowspan="1">454</td></tr><tr class="passedeven"><td rowspan="2">TestScript.ProductPageTest</td><td><a href="#m3">validateAddToCart</a></td><td rowspan="1">1724328161817</td><td rowspan="1">2328</td></tr><tr class="passedeven"><td><a href="#m4">validatePrizeSection</a></td><td rowspan="1">1724328162385</td><td rowspan="1">1960</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestEx &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestScript.LoginPageTest</td><td><a href="#m0">validateLoginPage_Labels</a></td><td rowspan="1">1724329043939</td><td rowspan="1">2674</td></tr><tr><th colspan="4">TestEx &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">TestScript.CartPageTest</td><td><a href="#m1">ValidateCheckoutFunctionality</a></td><td rowspan="1">1724329041590</td><td rowspan="1">11785</td></tr><tr class="passedeven"><td><a href="#m2">validateContinueShoppingFunctionality</a></td><td rowspan="1">1724329041900</td><td rowspan="1">9854</td></tr><tr class="passedeven"><td><a href="#m3">validateProductAddedToCart</a></td><td rowspan="1">1724329041837</td><td rowspan="1">7737</td></tr><tr class="passedodd"><td rowspan="1">TestScript.LoginPageTest</td><td><a href="#m4">validateLoginButtonIsDisplayed</a></td><td rowspan="1">1724329044815</td><td rowspan="1">1892</td></tr><tr class="passedeven"><td rowspan="5">TestScript.ProductPageTest</td><td><a href="#m5">ProductPageValidation</a></td><td rowspan="1">1724329041552</td><td rowspan="1">14857</td></tr><tr class="passedeven"><td><a href="#m6">addProductToCart</a></td><td rowspan="1">1724329042580</td><td rowspan="1">10299</td></tr><tr class="passedeven"><td><a href="#m7">validateAddToCart</a></td><td rowspan="1">1724329045386</td><td rowspan="1">5246</td></tr><tr class="passedeven"><td><a href="#m8">validateISProductDisplayed</a></td><td rowspan="1">1724329044579</td><td rowspan="1">6168</td></tr><tr class="passedeven"><td><a href="#m9">validatePrizeSection</a></td><td rowspan="1">1724329045097</td><td rowspan="1">6816</td></tr></tbody>
 </table>
-<h2>Login Test</h2><h3 id="m0">TestScript.CartPageTest#validateContinueShoppingFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestScript.CartPageTest#validateProductAddedToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestScript.LoginPageTest#validateLoginPage_Labels</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TestScript.ProductPageTest#validateAddToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">TestScript.ProductPageTest#validatePrizeSection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestEx</h2><h3 id="m0">TestScript.LoginPageTest#validateLoginPage_Labels</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [wag Labs] but found [Swag Labs]
+	at action.Action.equal(Action.java:38)
+	at Page.LoginPageObject.validateLoginPageHeading(LoginPageObject.java:64)
+	at TestScript.LoginPageTest.validateLoginPage_Labels(LoginPageTest.java:35)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestScript.CartPageTest#ValidateCheckoutFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestScript.CartPageTest#validateContinueShoppingFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestScript.CartPageTest#validateProductAddedToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestScript.LoginPageTest#validateLoginButtonIsDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestScript.ProductPageTest#ProductPageValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestScript.ProductPageTest#addProductToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestScript.ProductPageTest#validateAddToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TestScript.ProductPageTest#validateISProductDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">TestScript.ProductPageTest#validatePrizeSection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

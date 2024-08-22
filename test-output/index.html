@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">All Test Suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
-                    <span>D:\CodeBase\FrameWork\smoke.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>D:\CodeBase\FrameWork\regression.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-All_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-All_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-All_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-All_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-All_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-All_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,41 +92,75 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestScript.LoginPageTest" class="method navigator-link" hash-for-method="validateLoginPage_Labels">validateLoginPage_Labels</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
-                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-All_Test_Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="TestScript.ProductPageTest" class="method navigator-link" hash-for-method="validateAddToCart">validateAddToCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestScript.ProductPageTest" class="method navigator-link" hash-for-method="ProductPageValidation">ProductPageValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="TestScript.CartPageTest" class="method navigator-link" hash-for-method="validateContinueShoppingFunctionality">validateContinueShoppingFunctionality</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestScript.CartPageTest" class="method navigator-link" hash-for-method="ValidateCheckoutFunctionality">ValidateCheckoutFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="TestScript.LoginPageTest" class="method navigator-link" hash-for-method="validateLoginPage_Labels">validateLoginPage_Labels</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestScript.ProductPageTest" class="method navigator-link" hash-for-method="addProductToCart">addProductToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="TestScript.ProductPageTest" class="method navigator-link" hash-for-method="validatePrizeSection">validatePrizeSection</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestScript.ProductPageTest" class="method navigator-link" hash-for-method="validateAddToCart">validateAddToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="TestScript.CartPageTest" class="method navigator-link" hash-for-method="validateProductAddedToCart">validateProductAddedToCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestScript.CartPageTest" class="method navigator-link" hash-for-method="validateContinueShoppingFunctionality">validateContinueShoppingFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestScript.ProductPageTest" class="method navigator-link" hash-for-method="validateISProductDisplayed">validateISProductDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestScript.LoginPageTest" class="method navigator-link" hash-for-method="validateLoginButtonIsDisplayed">validateLoginButtonIsDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestScript.ProductPageTest" class="method navigator-link" hash-for-method="validatePrizeSection">validatePrizeSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestScript.CartPageTest" class="method navigator-link" hash-for-method="validateProductAddedToCart">validateProductAddedToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -137,10 +171,10 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
-          <div class="suite-All_Test_Suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">TestScript.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -149,11 +183,22 @@
                   <a name="validateLoginPage_Labels">
                   </a> <!-- validateLoginPage_Labels -->
                   <span class="method-name">validateLoginPage_Labels</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [wag Labs] but found [Swag Labs]
+	at action.Action.equal(Action.java:38)
+	at Page.LoginPageObject.validateLoginPageHeading(LoginPageObject.java:64)
+	at TestScript.LoginPageTest.validateLoginPage_Labels(LoginPageTest.java:35)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">TestScript.ProductPageTest</span>
@@ -161,9 +206,36 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="ProductPageValidation">
+                  </a> <!-- ProductPageValidation -->
+                  <span class="method-name">ProductPageValidation</span>
+                  <em>
+(Validating Currect page url )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductToCart">
+                  </a> <!-- addProductToCart -->
+                  <span class="method-name">addProductToCart</span>
+                  <em>
+(Add product To Cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="validateAddToCart">
                   </a> <!-- validateAddToCart -->
                   <span class="method-name">validateAddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateISProductDisplayed">
+                  </a> <!-- validateISProductDisplayed -->
+                  <span class="method-name">validateISProductDisplayed</span>
+                  <em>
+(validate product is  Displayed or not)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -176,13 +248,37 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLoginButtonIsDisplayed">
+                  </a> <!-- validateLoginButtonIsDisplayed -->
+                  <span class="method-name">validateLoginButtonIsDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">TestScript.CartPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateCheckoutFunctionality">
+                  </a> <!-- ValidateCheckoutFunctionality -->
+                  <span class="method-name">ValidateCheckoutFunctionality</span>
+                  <em>
+(validate check out after added product to the cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="validateContinueShoppingFunctionality">
@@ -200,159 +296,159 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-        </div> <!-- panel All_Test_Suite -->
-        <div panel-name="test-xml-All_Test_Suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\CodeBase\FrameWork\smoke.xml</span>
+            <span class="header-content">D:\CodeBase\FrameWork\regression.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite parallel=&quot;methods&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utility.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Login Test&quot;&gt;
+  &lt;test thread-count=&quot;17&quot; parallel=&quot;methods&quot; name=&quot;TestEx&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestScript.LoginPageTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;validateLoginPage_Labels&quot;/&gt;
+          &lt;exclude name=&quot;validateLoginPage_login&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestScript.LoginPageTest --&gt;
-      &lt;class name=&quot;TestScript.ProductPageTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;validatePrizeSection&quot;/&gt;
-          &lt;include name=&quot;validateAddToCart&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- TestScript.ProductPageTest --&gt;
-      &lt;class name=&quot;TestScript.CartPageTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;validateProductAddedToCart&quot;/&gt;
-          &lt;include name=&quot;validateContinueShoppingFunctionality&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- TestScript.CartPageTest --&gt;
+      &lt;class name=&quot;TestScript.ProductPageTest&quot;/&gt;
+      &lt;class name=&quot;TestScript.CartPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Login Test --&gt;
-&lt;/suite&gt; &lt;!-- All Test Suite --&gt;
+  &lt;/test&gt; &lt;!-- TestEx --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-All_Test_Suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for All Test Suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login Test (3 classes)</span>
+                <span class="test-name">TestEx (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-All_Test_Suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for All Test Suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-All_Test_Suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for All Test Suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_All_Test_Suite');
-function tableData_All_Test_Suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateProductAddedToCart')
-data.setCell(0, 2, 'TestScript.CartPageTest')
-data.setCell(0, 3, 3603);
+data.setCell(0, 1, 'ProductPageValidation')
+data.setCell(0, 2, 'TestScript.ProductPageTest')
+data.setCell(0, 3, 14857);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateContinueShoppingFunctionality')
+data.setCell(1, 1, 'ValidateCheckoutFunctionality')
 data.setCell(1, 2, 'TestScript.CartPageTest')
-data.setCell(1, 3, 3193);
+data.setCell(1, 3, 11785);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateAddToCart')
+data.setCell(2, 1, 'addProductToCart')
 data.setCell(2, 2, 'TestScript.ProductPageTest')
-data.setCell(2, 3, 2328);
+data.setCell(2, 3, 10299);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validatePrizeSection')
-data.setCell(3, 2, 'TestScript.ProductPageTest')
-data.setCell(3, 3, 1960);
+data.setCell(3, 1, 'validateContinueShoppingFunctionality')
+data.setCell(3, 2, 'TestScript.CartPageTest')
+data.setCell(3, 3, 9854);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validateLoginPage_Labels')
-data.setCell(4, 2, 'TestScript.LoginPageTest')
-data.setCell(4, 3, 454);
-window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
+data.setCell(4, 1, 'validateProductAddedToCart')
+data.setCell(4, 2, 'TestScript.CartPageTest')
+data.setCell(4, 3, 7737);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validatePrizeSection')
+data.setCell(5, 2, 'TestScript.ProductPageTest')
+data.setCell(5, 3, 6816);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateISProductDisplayed')
+data.setCell(6, 2, 'TestScript.ProductPageTest')
+data.setCell(6, 3, 6168);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateAddToCart')
+data.setCell(7, 2, 'TestScript.ProductPageTest')
+data.setCell(7, 3, 5246);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateLoginPage_Labels')
+data.setCell(8, 2, 'TestScript.LoginPageTest')
+data.setCell(8, 3, 2674);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateLoginButtonIsDisplayed')
+data.setCell(9, 2, 'TestScript.LoginPageTest')
+data.setCell(9, 3, 1892);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
-              <div id="times-div-All_Test_Suite">
-              </div> <!-- times-div-All_Test_Suite -->
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-All_Test_Suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for All Test Suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-All_Test_Suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">10 ignored methods</span>
+            <span class="header-content">5 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestScript.LoginPageTest</span>
+              <span class="ignored-class-name">TestScript.ProductPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">validateLoginButtonIsDisplayed</span>
+                <span class="ignored-method-name">terminateconfig</span>
                 <br/>
-                <span class="ignored-method-name">validateLoginPage_login</span>
+                <span class="ignored-method-name">loadConfig</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestScript.ProductPageTest</span>
+              <span class="ignored-class-name">TestScript.LoginPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">validateISProductDisplayed</span>
-                <br/>
-                <span class="ignored-method-name">loadConfig</span>
-                <br/>
-                <span class="ignored-method-name">ProductPageValidation</span>
-                <br/>
-                <span class="ignored-method-name">addProductToCart</span>
-                <br/>
-                <span class="ignored-method-name">terminateconfig</span>
+                <span class="ignored-method-name">validateLoginPage_login</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestScript.CartPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">terminateconfig</span>
-                <br/>
-                <span class="ignored-method-name">ValidateCheckoutFunctionality</span>
-                <br/>
                 <span class="ignored-method-name">loadConfig</span>
+                <br/>
+                <span class="ignored-method-name">terminateconfig</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-All_Test_Suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -365,100 +461,189 @@ return data;
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">TestScript.CartPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestScript.ProductPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">258 ms</span>
+                <span class="method-start">273 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">258 ms</span>
+                <span class="method-start">279 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.CartPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">260 ms</span>
+                <span class="method-start">283 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">285 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.CartPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">286 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">288 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.ProductPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">261 ms</span>
+                <span class="method-start">289 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">262 ms</span>
+                <span class="method-start">292 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestScript.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">294 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">295 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validateLoginPage_Labels</span>
-                <span class="method-start">8620 ms</span>
+                <span class="method-name">ProductPageValidation</span>
+                <span class="method-start">15645 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.CartPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">validateContinueShoppingFunctionality</span>
-                <span class="method-start">8622 ms</span>
+                <span class="method-name">ValidateCheckoutFunctionality</span>
+                <span class="method-start">15683 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateProductAddedToCart</span>
-                <span class="method-start">8698 ms</span>
+                <span class="method-start">15930 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateContinueShoppingFunctionality</span>
+                <span class="method-start">15993 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.ProductPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">validateAddToCart</span>
-                <span class="method-start">8917 ms</span>
+                <span class="method-name">addProductToCart</span>
+                <span class="method-start">16673 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">9100 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateLoginPage_Labels</span>
+                <span class="method-start">18032 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateISProductDisplayed</span>
+                <span class="method-start">18672 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateLoginButtonIsDisplayed</span>
+                <span class="method-start">18908 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.ProductPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">validatePrizeSection</span>
-                <span class="method-start">9485 ms</span>
+                <span class="method-start">19190 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validateAddToCart</span>
+                <span class="method-start">19479 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11253 ms</span>
+                <span class="method-start">20805 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11449 ms</span>
+                <span class="method-start">21204 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.CartPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11829 ms</span>
+                <span class="method-start">23671 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24727 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12305 ms</span>
+                <span class="method-start">24849 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.CartPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25850 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26014 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26973 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.CartPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">27470 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestScript.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30504 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">terminateconfig</span>
-                <span class="method-start">12937 ms</span>
+                <span class="method-start">30952 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
