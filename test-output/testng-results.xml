@@ -1,43 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="12" passed="7" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-22T06:20:31 IST" name="All Test Suite" finished-at="2024-08-22T06:20:41 IST" duration-ms="10831">
+  <suite started-at="2024-08-22T14:38:08 IST" name="Suite" finished-at="2024-08-22T14:38:40 IST" duration-ms="31146">
     <groups>
     </groups>
-    <test started-at="2024-08-22T06:20:31 IST" name="Login Test" finished-at="2024-08-22T06:20:41 IST" duration-ms="10831">
+    <test started-at="2024-08-22T14:38:08 IST" name="Test" finished-at="2024-08-22T14:38:40 IST" duration-ms="31146">
       <class name="TestScript.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:31 IST" name="setUp" finished-at="2024-08-22T06:20:37 IST" duration-ms="6093" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@742ff096]" started-at="2024-08-22T14:38:08 IST" name="setUp" finished-at="2024-08-22T14:38:19 IST" duration-ms="10909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:31 IST" name="setUp" finished-at="2024-08-22T06:20:37 IST" duration-ms="6551" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@742ff096]" started-at="2024-08-22T14:38:08 IST" name="setUp" finished-at="2024-08-22T14:38:17 IST" duration-ms="8457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:32 IST" name="setUp" finished-at="2024-08-22T06:20:37 IST" duration-ms="5764" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateLoginWithOutAnyValue()[pri:2, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:37 IST" name="validateLoginWithOutAnyValue" finished-at="2024-08-22T06:20:38 IST" duration-ms="1077" status="PASS">
+        <test-method signature="validateLoginWithOutAnyValue()[pri:1, instance:TestScript.LoginPageTest@742ff096]" started-at="2024-08-22T14:38:17 IST" name="validateLoginWithOutAnyValue" finished-at="2024-08-22T14:38:17 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Page.LoginPageObject.LoginButtonIsDisplayed()" because "this.loginobj" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Page.LoginPageObject.LoginButtonIsDisplayed()" because "this.loginobj" is null
+at TestScript.LoginPageTest.validateLoginWithOutAnyValue(LoginPageTest.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginWithOutAnyValue -->
-        <test-method signature="validateLoginPage_Labels()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:37 IST" name="validateLoginPage_Labels" finished-at="2024-08-22T06:20:38 IST" duration-ms="643" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@742ff096]" started-at="2024-08-22T14:38:17 IST" name="tearDown" finished-at="2024-08-22T14:38:19 IST" duration-ms="2028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="validateLoginPage_Labels()[pri:0, instance:TestScript.LoginPageTest@742ff096]" started-at="2024-08-22T14:38:19 IST" name="validateLoginPage_Labels" finished-at="2024-08-22T14:38:20 IST" duration-ms="331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginPage_Labels -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@742ff096]" started-at="2024-08-22T14:38:20 IST" name="tearDown" finished-at="2024-08-22T14:38:20 IST" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@742ff096]" started-at="2024-08-22T14:38:26 IST" name="setUp" finished-at="2024-08-22T14:38:31 IST" duration-ms="4590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateLoginPage_login(java.lang.String,java.lang.String)[pri:2, instance:TestScript.LoginPageTest@742ff096]" started-at="2024-08-22T14:38:31 IST" name="validateLoginPage_login" data-provider="testData" finished-at="2024-08-22T14:38:37 IST" duration-ms="6044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginPage_login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@742ff096]" started-at="2024-08-22T14:38:37 IST" name="tearDown" finished-at="2024-08-22T14:38:37 IST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@742ff096]" started-at="2024-08-22T14:38:37 IST" name="setUp" finished-at="2024-08-22T14:38:39 IST" duration-ms="1833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateLoginPage_login(java.lang.String,java.lang.String)[pri:2, instance:TestScript.LoginPageTest@742ff096]" started-at="2024-08-22T14:38:39 IST" name="validateLoginPage_login" data-provider="testData" finished-at="2024-08-22T14:38:39 IST" duration-ms="581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_userr]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginPage_login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@742ff096]" started-at="2024-08-22T14:38:39 IST" name="tearDown" finished-at="2024-08-22T14:38:40 IST" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestScript.LoginPageTest -->
+      <class name="TestScript.ProductPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:08 IST" name="setUp" finished-at="2024-08-22T14:38:17 IST" duration-ms="8202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ProductPageValidation()[pri:0, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:17 IST" name="ProductPageValidation" description="Validating Currect page url " finished-at="2024-08-22T14:38:24 IST" duration-ms="6939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductPageValidation -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:19 IST" name="setUp" finished-at="2024-08-22T14:38:22 IST" duration-ms="2264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validatePrizeSection()[pri:1, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:22 IST" name="validatePrizeSection" description="validate prize Dropdown" finished-at="2024-08-22T14:38:23 IST" duration-ms="1622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePrizeSection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:23 IST" name="tearDown" finished-at="2024-08-22T14:38:32 IST" duration-ms="8528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:24 IST" name="tearDown" finished-at="2024-08-22T14:38:25 IST" duration-ms="1119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:25 IST" name="setUp" finished-at="2024-08-22T14:38:29 IST" duration-ms="4023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:25 IST" name="setUp" finished-at="2024-08-22T14:38:29 IST" duration-ms="4052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:26 IST" name="setUp" finished-at="2024-08-22T14:38:30 IST" duration-ms="4211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateISProductDisplayed()[pri:2, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:29 IST" name="validateISProductDisplayed" description="validate product is  Displayed or not" finished-at="2024-08-22T14:38:31 IST" duration-ms="1655" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [wag Labs] but found [Swag Labs]]]>
+              <![CDATA[expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [wag Labs] but found [Swag Labs]
+              <![CDATA[java.lang.AssertionError: expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at Page.LoginPageObject.validateLoginPageHeading(LoginPageObject.java:55)
-at TestScript.LoginPageTest.validateLoginPage_Labels(LoginPageTest.java:33)
+at Page.ProductPageObject.<init>(ProductPageObject.java:24)
+at TestScript.ProductPageTest.validateISProductDisplayed(ProductPageTest.java:60)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,74 +183,232 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLoginPage_Labels -->
-        <test-method signature="validateLoginPage_login(java.lang.String,java.lang.String)[pri:1, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:37 IST" name="validateLoginPage_login" data-provider="testData" finished-at="2024-08-22T06:20:39 IST" duration-ms="1345" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- validateISProductDisplayed -->
+        <test-method signature="validateAddToCart()[pri:3, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:29 IST" name="validateAddToCart" finished-at="2024-08-22T14:38:37 IST" duration-ms="7476" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#login\-button"}
+  (Session info: chrome=127.0.6533.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [274b863724a8ab3bb9f923599b8db0d8, findElement {using=id, value=login-button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\nragu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65274}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65274/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 274b863724a8ab3bb9f923599b8db0d8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login\-button"}
+  (Session info: chrome=127.0.6533.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [274b863724a8ab3bb9f923599b8db0d8, findElement {using=id, value=login-button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\nragu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65274}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65274/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 274b863724a8ab3bb9f923599b8db0d8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at action.Action.clickEle(Action.java:17)
+at Page.LoginPageObject.ClickOnLoginButton(LoginPageObject.java:123)
+at TestScript.ProductPageTest.validateAddToCart(ProductPageTest.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLoginPage_login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:38 IST" name="tearDown" finished-at="2024-08-22T06:20:39 IST" duration-ms="1414" status="PASS">
+        </test-method> <!-- validateAddToCart -->
+        <test-method signature="addProductToCart()[pri:4, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:30 IST" name="addProductToCart" description="Add product To Cart" finished-at="2024-08-22T14:38:37 IST" duration-ms="7462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:31 IST" name="tearDown" finished-at="2024-08-22T14:38:32 IST" duration-ms="1006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:39 IST" name="tearDown" finished-at="2024-08-22T06:20:39 IST" duration-ms="536" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:37 IST" name="tearDown" finished-at="2024-08-22T14:38:38 IST" duration-ms="1167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:39 IST" name="tearDown" finished-at="2024-08-22T06:20:39 IST" duration-ms="512" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:39 IST" name="setUp" finished-at="2024-08-22T06:20:41 IST" duration-ms="1570" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateLoginPage_login(java.lang.String,java.lang.String)[pri:1, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:41 IST" name="validateLoginPage_login" data-provider="testData" finished-at="2024-08-22T06:20:41 IST" duration-ms="357" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginPage_login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@5149d738]" started-at="2024-08-22T06:20:41 IST" name="tearDown" finished-at="2024-08-22T06:20:41 IST" duration-ms="212" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestScript.LoginPageTest -->
-      <class name="TestScript.ProductPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@7e057f43]" started-at="2024-08-22T06:20:31 IST" name="setUp" finished-at="2024-08-22T06:20:37 IST" duration-ms="6616" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="ProductPageValidation()[pri:0, instance:TestScript.ProductPageTest@7e057f43]" started-at="2024-08-22T06:20:37 IST" name="ProductPageValidation" finished-at="2024-08-22T06:20:38 IST" duration-ms="756" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductPageValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@7e057f43]" started-at="2024-08-22T06:20:38 IST" name="tearDown" finished-at="2024-08-22T06:20:39 IST" duration-ms="1238" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@2b40ff9c]" started-at="2024-08-22T14:38:37 IST" name="tearDown" finished-at="2024-08-22T14:38:38 IST" duration-ms="953" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestScript.ProductPageTest -->
-    </test> <!-- Login Test -->
-  </suite> <!-- All Test Suite -->
+      <class name="TestScript.CartPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.CartPageTest@3e08ff24]" started-at="2024-08-22T14:38:08 IST" name="setUp" finished-at="2024-08-22T14:38:17 IST" duration-ms="8598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.CartPageTest@3e08ff24]" started-at="2024-08-22T14:38:08 IST" name="setUp" finished-at="2024-08-22T14:38:17 IST" duration-ms="8268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ValidateCheckoutFunctionality()[pri:1, instance:TestScript.CartPageTest@3e08ff24]" started-at="2024-08-22T14:38:17 IST" name="ValidateCheckoutFunctionality" description="validate check out after added product to the cart" finished-at="2024-08-22T14:38:24 IST" duration-ms="6902" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#login\-button"}
+  (Session info: chrome=127.0.6533.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b16a7411ea3fdfa8b90fab429b41742, findElement {using=id, value=login-button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\nragu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65080/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b16a7411ea3fdfa8b90fab429b41742]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login\-button"}
+  (Session info: chrome=127.0.6533.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b16a7411ea3fdfa8b90fab429b41742, findElement {using=id, value=login-button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\nragu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65080}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65080/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b16a7411ea3fdfa8b90fab429b41742
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at action.Action.clickEle(Action.java:17)
+at Page.LoginPageObject.ClickOnLoginButton(LoginPageObject.java:123)
+at TestScript.CartPageTest.ValidateCheckoutFunctionality(CartPageTest.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCheckoutFunctionality -->
+        <test-method signature="validateLoginPage_Labels()[pri:0, instance:TestScript.CartPageTest@3e08ff24]" started-at="2024-08-22T14:38:17 IST" name="validateLoginPage_Labels" finished-at="2024-08-22T14:38:25 IST" duration-ms="7743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginPage_Labels -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.CartPageTest@3e08ff24]" started-at="2024-08-22T14:38:20 IST" name="setUp" finished-at="2024-08-22T14:38:23 IST" duration-ms="2858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateContinueShoppingFunctionality()[pri:2, instance:TestScript.CartPageTest@3e08ff24]" started-at="2024-08-22T14:38:23 IST" name="validateContinueShoppingFunctionality" description="validate continue shopping From cart page" finished-at="2024-08-22T14:38:25 IST" duration-ms="1806" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.saucedemo.com/cart.html] but found [https://www.saucedemo.com/inventory.html]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.saucedemo.com/cart.html] but found [https://www.saucedemo.com/inventory.html]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at Page.CartPageObject.<init>(CartPageObject.java:24)
+at Page.ProductPageObject.clickOnCartIcon(ProductPageObject.java:100)
+at TestScript.CartPageTest.validateContinueShoppingFunctionality(CartPageTest.java:71)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateContinueShoppingFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.CartPageTest@3e08ff24]" started-at="2024-08-22T14:38:24 IST" name="tearDown" finished-at="2024-08-22T14:38:25 IST" duration-ms="862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.CartPageTest@3e08ff24]" started-at="2024-08-22T14:38:25 IST" name="tearDown" finished-at="2024-08-22T14:38:25 IST" duration-ms="575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.CartPageTest@3e08ff24]" started-at="2024-08-22T14:38:25 IST" name="tearDown" finished-at="2024-08-22T14:38:26 IST" duration-ms="672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestScript.CartPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

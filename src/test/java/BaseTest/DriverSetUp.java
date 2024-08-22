@@ -6,6 +6,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -63,7 +64,7 @@ public class DriverSetUp {
    		
    		//Launching the URL
    		getDriver().get(readPropertieFile.configProperties("url"));
-   		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+   		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
    		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
    		
    		
@@ -82,6 +83,8 @@ public class DriverSetUp {
 		// Get Driver from threadLocalmap
 		return driver.get();
 	}
+
+
 
 
 

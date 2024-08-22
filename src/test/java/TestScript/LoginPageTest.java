@@ -1,65 +1,60 @@
 package TestScript;
+
 import BaseTest.*;
 import Page.LoginPageObject;
 import org.testng.annotations.*;
 
-
-
 import utility.CommonFunctions;
 
-public class LoginPageTest  extends DriverSetUp {
+public class LoginPageTest extends DriverSetUp {
 
-    @BeforeMethod
-    public void setUp() {
-    	
+	@BeforeMethod
+	public void setUp() {
 
-        BrowsersetUp();
-       
+		BrowsersetUp();
+
+	}
+
+	@AfterMethod
+	public void tearDown() {
+
+		browserQuit();
+	}
+	
+	LoginPageObject loginobj ;
+
+	@Test(priority = 0)
+	public void validateLoginPage_Labels() {
+
+		loginobj = new LoginPageObject();
+		loginobj.getLoginPageTitle("Swag Labs");
+		loginobj.validateLoginPageHeading("Swag Labs");
+		loginobj.validatePlaceholdervalue("Username", "Password");
+		loginobj.LoginButtonIsDisplayed();
+
+	}
+	
+	@Test(priority = 1)
+	public void validateLoginWithOutAnyValue() {
+		loginobj.LoginButtonIsDisplayed();
 		
-    }
 
-    @AfterMethod
-    public void tearDown() {
+	}
 
-    	
-        browserQuit();
-    }
+	@Test(priority = 2, dataProvider = "testData", dataProviderClass = CommonFunctions.class)
+	public void validateLoginPage_login(String username, String password) {
+		System.out.println(username + " " + password);
 
-    @Test(priority = 0)
-    public void validateLoginPage_Labels(){
+		 loginobj = new LoginPageObject();
+		 loginobj.Login(username, password);
+		 loginobj.ClickOnLoginButton();
+		 loginobj.validateLoginFunction();
+		 
+		
+	}
 
-        LoginPageObject obj = new LoginPageObject();
-        obj.getLoginPageTitle(getDriver(),"Swag Labs");
-        obj.validateLoginPageHeading("wag Labs");
-        obj.validatePlaceholdervalue("Username","Password");
-
-       
-        
-    }
-
-    @Test(priority = 1,dataProvider = "testData" ,dataProviderClass = CommonFunctions.class)
-    public void validateLoginPage_login(String username , String password){
-        System.out.println(username+" "+password);
-
-        LoginPageObject obj = new LoginPageObject();
-        obj.Login(username,password);
-        obj.ClickOnLoginButton();
-
-
-    }
-
-    @Test(priority = 2)
-    public void validateLoginWithOutAnyValue(){
-        LoginPageObject obj = new LoginPageObject();
-        obj.ClickOnLoginButton();
-        obj.loginEmptyUserNamePassword("Epic sadface: Username is required");
-
-    }
-
-
-
-
-
+	
+	
 
 
 }

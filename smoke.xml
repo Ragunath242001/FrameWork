@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+	<listeners>
+		<listener class-name="utility.Listeners" />
+	</listeners>
+
+	<test name="Login Test" parallel="false">
+		<classes>
+			<class name="TestScript.LoginPageTest">
+				<methods>
+					<include name="validateLoginPage_login"></include>
+					<include name="validateLoginPage_Labels"></include>
+				</methods>
+
+			</class>
+			<class name="TestScript.ProductPageTest">
+				<methods>
+					<include name="validatePrizeSection"></include>
+					<include name="validateAddToCart"></include>
+				</methods>
+			</class>
+
+			<class name="TestScript.CartPageTest">
+				<methods>
+					<include name="validateLoginPage_Labels"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
