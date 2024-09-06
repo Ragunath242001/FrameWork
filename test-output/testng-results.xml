@@ -2,24 +2,32 @@
 <testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-22T17:47:06 IST" name="Suite" finished-at="2024-08-22T17:47:36 IST" duration-ms="30646">
+  <suite started-at="2024-09-06T07:05:40 IST" name="Suite" finished-at="2024-09-06T07:06:10 IST" duration-ms="29624">
     <groups>
     </groups>
-    <test started-at="2024-08-22T17:47:06 IST" name="TestEx" finished-at="2024-08-22T17:47:36 IST" duration-ms="30646">
+    <test started-at="2024-09-06T07:05:40 IST" name="Test" finished-at="2024-09-06T07:06:10 IST" duration-ms="29624">
       <class name="TestScript.LoginPageTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-08-22T17:47:05 IST" name="loadConfig" finished-at="2024-08-22T17:47:06 IST" duration-ms="210" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-09-06T07:05:40 IST" name="loadConfig" finished-at="2024-09-06T07:05:40 IST" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-08-22T17:47:06 IST" name="setUp" finished-at="2024-08-22T17:47:23 IST" duration-ms="17752" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-09-06T07:05:40 IST" name="setUp" finished-at="2024-09-06T07:05:55 IST" duration-ms="14575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-08-22T17:47:06 IST" name="setUp" finished-at="2024-08-22T17:47:24 IST" duration-ms="18623" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-09-06T07:05:40 IST" name="setUp" finished-at="2024-09-06T07:05:52 IST" duration-ms="11585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateLoginPage_Labels()[pri:0, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-08-22T17:47:23 IST" name="validateLoginPage_Labels" finished-at="2024-08-22T17:47:26 IST" duration-ms="2674" status="FAIL">
+        <test-method signature="validateLoginButtonIsDisplayed()[pri:1, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-09-06T07:05:52 IST" name="validateLoginButtonIsDisplayed" finished-at="2024-09-06T07:05:52 IST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginButtonIsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-09-06T07:05:52 IST" name="tearDown" finished-at="2024-09-06T07:05:52 IST" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="validateLoginPage_Labels()[pri:0, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-09-06T07:05:55 IST" name="validateLoginPage_Labels" finished-at="2024-09-06T07:05:55 IST" duration-ms="93" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [wag Labs] but found [Swag Labs]]]>
@@ -32,8 +40,8 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at action.Action.equal(Action.java:38)
-at Page.LoginPageObject.validateLoginPageHeading(LoginPageObject.java:64)
+at action.Action.equal(Action.java:44)
+at Page.LoginPageObject.validateLoginPageHeading(LoginPageObject.java:58)
 at TestScript.LoginPageTest.validateLoginPage_Labels(LoginPageTest.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -59,123 +67,115 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginPage_Labels -->
-        <test-method signature="validateLoginButtonIsDisplayed()[pri:1, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-08-22T17:47:24 IST" name="validateLoginButtonIsDisplayed" finished-at="2024-08-22T17:47:26 IST" duration-ms="1892" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginButtonIsDisplayed -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-08-22T17:47:26 IST" name="tearDown" finished-at="2024-08-22T17:47:34 IST" duration-ms="8007" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-09-06T07:05:55 IST" name="tearDown" finished-at="2024-09-06T07:05:55 IST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-08-22T17:47:27 IST" name="tearDown" finished-at="2024-08-22T17:47:34 IST" duration-ms="7646" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="terminateconfig()[pri:0, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-08-22T17:47:36 IST" name="terminateconfig" finished-at="2024-08-22T17:47:37 IST" duration-ms="427" status="PASS">
+        <test-method is-config="true" signature="terminateconfig()[pri:0, instance:TestScript.LoginPageTest@24569dba]" started-at="2024-09-06T07:06:10 IST" name="terminateconfig" finished-at="2024-09-06T07:06:10 IST" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateconfig -->
       </class> <!-- TestScript.LoginPageTest -->
       <class name="TestScript.ProductPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:06 IST" name="setUp" finished-at="2024-08-22T17:47:21 IST" duration-ms="15367" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:05:40 IST" name="setUp" finished-at="2024-09-06T07:05:48 IST" duration-ms="7882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:06 IST" name="setUp" finished-at="2024-08-22T17:47:24 IST" duration-ms="18383" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:06 IST" name="setUp" finished-at="2024-08-22T17:47:25 IST" duration-ms="18898" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:06 IST" name="setUp" finished-at="2024-08-22T17:47:25 IST" duration-ms="19184" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:06 IST" name="setUp" finished-at="2024-08-22T17:47:22 IST" duration-ms="16378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="ProductPageValidation()[pri:0, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:21 IST" name="ProductPageValidation" description="Validating Currect page url " finished-at="2024-08-22T17:47:36 IST" duration-ms="14857" status="PASS">
+        <test-method signature="ProductPageValidation()[pri:0, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:05:48 IST" name="ProductPageValidation" description="Validating Currect page url " finished-at="2024-09-06T07:06:02 IST" duration-ms="13948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductPageValidation -->
-        <test-method signature="addProductToCart()[pri:4, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:22 IST" name="addProductToCart" description="Add product To Cart" finished-at="2024-08-22T17:47:32 IST" duration-ms="10299" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:05:52 IST" name="setUp" finished-at="2024-09-06T07:05:58 IST" duration-ms="5378" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addProductToCart -->
-        <test-method signature="validateISProductDisplayed()[pri:2, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:24 IST" name="validateISProductDisplayed" description="validate product is  Displayed or not" finished-at="2024-08-22T17:47:30 IST" duration-ms="6168" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateISProductDisplayed -->
-        <test-method signature="validatePrizeSection()[pri:1, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:25 IST" name="validatePrizeSection" description="validate prize Dropdown" finished-at="2024-08-22T17:47:31 IST" duration-ms="6816" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="validatePrizeSection()[pri:1, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:05:58 IST" name="validatePrizeSection" description="validate prize Dropdown" finished-at="2024-09-06T07:06:06 IST" duration-ms="8650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePrizeSection -->
-        <test-method signature="validateAddToCart()[pri:3, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:25 IST" name="validateAddToCart" finished-at="2024-08-22T17:47:30 IST" duration-ms="5246" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:05:58 IST" name="setUp" finished-at="2024-09-06T07:06:03 IST" duration-ms="4691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:05:58 IST" name="setUp" finished-at="2024-09-06T07:06:04 IST" duration-ms="5315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:06:02 IST" name="tearDown" finished-at="2024-09-06T07:06:02 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:06:02 IST" name="setUp" finished-at="2024-09-06T07:06:09 IST" duration-ms="6622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateISProductDisplayed()[pri:2, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:06:03 IST" name="validateISProductDisplayed" description="validate product is  Displayed or not" finished-at="2024-09-06T07:06:05 IST" duration-ms="2486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateISProductDisplayed -->
+        <test-method signature="validateAddToCart()[pri:3, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:06:04 IST" name="validateAddToCart" finished-at="2024-09-06T07:06:05 IST" duration-ms="1694" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:30 IST" name="tearDown" finished-at="2024-08-22T17:47:34 IST" duration-ms="4178" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:06:05 IST" name="tearDown" finished-at="2024-09-06T07:06:06 IST" duration-ms="809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:30 IST" name="tearDown" finished-at="2024-08-22T17:47:34 IST" duration-ms="3858" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:06:05 IST" name="tearDown" finished-at="2024-09-06T07:06:06 IST" duration-ms="764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:31 IST" name="tearDown" finished-at="2024-08-22T17:47:34 IST" duration-ms="2840" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:06:06 IST" name="tearDown" finished-at="2024-09-06T07:06:07 IST" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:32 IST" name="tearDown" finished-at="2024-08-22T17:47:34 IST" duration-ms="1774" status="PASS">
+        <test-method signature="addProductToCart()[pri:4, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:06:09 IST" name="addProductToCart" description="Add product To Cart" finished-at="2024-09-06T07:06:10 IST" duration-ms="660" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@6be968ce]" started-at="2024-08-22T17:47:36 IST" name="tearDown" finished-at="2024-08-22T17:47:36 IST" duration-ms="351" status="PASS">
+        </test-method> <!-- addProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.ProductPageTest@7c37508a]" started-at="2024-09-06T07:06:10 IST" name="tearDown" finished-at="2024-09-06T07:06:10 IST" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestScript.ProductPageTest -->
       <class name="TestScript.CartPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.CartPageTest@7c37508a]" started-at="2024-08-22T17:47:06 IST" name="setUp" finished-at="2024-08-22T17:47:21 IST" duration-ms="15647" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.CartPageTest@6be968ce]" started-at="2024-09-06T07:05:40 IST" name="setUp" finished-at="2024-09-06T07:05:56 IST" duration-ms="16109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.CartPageTest@7c37508a]" started-at="2024-08-22T17:47:06 IST" name="setUp" finished-at="2024-08-22T17:47:21 IST" duration-ms="15396" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.CartPageTest@6be968ce]" started-at="2024-09-06T07:05:40 IST" name="setUp" finished-at="2024-09-06T07:05:57 IST" duration-ms="16635" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.CartPageTest@7c37508a]" started-at="2024-08-22T17:47:06 IST" name="setUp" finished-at="2024-08-22T17:47:21 IST" duration-ms="15705" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestScript.CartPageTest@6be968ce]" started-at="2024-09-06T07:05:55 IST" name="setUp" finished-at="2024-09-06T07:06:02 IST" duration-ms="6761" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="ValidateCheckoutFunctionality()[pri:1, instance:TestScript.CartPageTest@7c37508a]" started-at="2024-08-22T17:47:21 IST" name="ValidateCheckoutFunctionality" description="validate check out after added product to the cart" finished-at="2024-08-22T17:47:33 IST" duration-ms="11785" status="PASS">
+        <test-method signature="ValidateCheckoutFunctionality()[pri:1, instance:TestScript.CartPageTest@6be968ce]" started-at="2024-09-06T07:05:56 IST" name="ValidateCheckoutFunctionality" description="validate check out after added product to the cart" finished-at="2024-09-06T07:05:58 IST" duration-ms="1473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateCheckoutFunctionality -->
-        <test-method signature="validateProductAddedToCart()[pri:0, instance:TestScript.CartPageTest@7c37508a]" started-at="2024-08-22T17:47:21 IST" name="validateProductAddedToCart" finished-at="2024-08-22T17:47:29 IST" duration-ms="7737" status="PASS">
+        <test-method signature="validateProductAddedToCart()[pri:0, instance:TestScript.CartPageTest@6be968ce]" started-at="2024-09-06T07:05:57 IST" name="validateProductAddedToCart" finished-at="2024-09-06T07:05:58 IST" duration-ms="1265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateProductAddedToCart -->
-        <test-method signature="validateContinueShoppingFunctionality()[pri:2, instance:TestScript.CartPageTest@7c37508a]" started-at="2024-08-22T17:47:21 IST" name="validateContinueShoppingFunctionality" description="validate continue shopping From cart page" finished-at="2024-08-22T17:47:31 IST" duration-ms="9854" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.CartPageTest@6be968ce]" started-at="2024-09-06T07:05:58 IST" name="tearDown" finished-at="2024-09-06T07:05:58 IST" duration-ms="311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.CartPageTest@6be968ce]" started-at="2024-09-06T07:05:58 IST" name="tearDown" finished-at="2024-09-06T07:05:58 IST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="validateContinueShoppingFunctionality()[pri:2, instance:TestScript.CartPageTest@6be968ce]" started-at="2024-09-06T07:06:02 IST" name="validateContinueShoppingFunctionality" description="validate continue shopping From cart page" finished-at="2024-09-06T07:06:05 IST" duration-ms="2999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateContinueShoppingFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.CartPageTest@7c37508a]" started-at="2024-08-22T17:47:29 IST" name="tearDown" finished-at="2024-08-22T17:47:34 IST" duration-ms="5009" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.CartPageTest@7c37508a]" started-at="2024-08-22T17:47:31 IST" name="tearDown" finished-at="2024-08-22T17:47:34 IST" duration-ms="2777" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.CartPageTest@7c37508a]" started-at="2024-08-22T17:47:33 IST" name="tearDown" finished-at="2024-08-22T17:47:34 IST" duration-ms="1327" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestScript.CartPageTest@6be968ce]" started-at="2024-09-06T07:06:05 IST" name="tearDown" finished-at="2024-09-06T07:06:06 IST" duration-ms="1161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestScript.CartPageTest -->
-    </test> <!-- TestEx -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -17,7 +17,7 @@ public class ExtentManager {
 	
 	public static void setExtent() {
 		//htmlReporter= new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/"+"MyReport_"+BaseClass.getCurrentTime()+".html");
-		htmlReporter= new ExtentHtmlReporter("src/test/java/Utility/MyReport.html");
+		htmlReporter= new ExtentHtmlReporter(System.getProperty("user.dir")+"/Reports/sauceApplicationReport.html");
 		htmlReporter.loadXMLConfig("src/test/java/Utility/extent-config.xml");
 		htmlReporter.config().setDocumentTitle("Automation Test Report");
 		htmlReporter.config().setReportName("Swag Labs Test Automation Report");
@@ -28,7 +28,7 @@ public class ExtentManager {
 		
 		extent.setSystemInfo("HostName", "Swag Labs");
 		extent.setSystemInfo("ProjectName", "Swag Labs");
-		extent.setSystemInfo("Tester", "Swag Labs");
+		extent.setSystemInfo("Tester", "Raguunath");
 		extent.setSystemInfo("OS", "Win10");
 		extent.setSystemInfo("Browser", "Chrome");
 	}

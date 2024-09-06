@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="utility.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="methods" name="TestEx(failed)">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
       <class name="TestScript.LoginPageTest">
         <methods>
@@ -16,5 +16,5 @@
         </methods>
       </class> <!-- TestScript.LoginPageTest -->
     </classes>
-  </test> <!-- TestEx(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
